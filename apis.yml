@@ -1,8 +1,25 @@
 aid: fenxiang-life
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fenxiang-life.png
 name: Fenxiang Life
-description: 'Fenxiang Life is a company surfaced as a portfolio company of dcm-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Fenxiang Life (分享生活) is a Hangzhou-based Chinese social e-commerce and
+  shopping-guide platform that combines cashback rebates with AI-driven price comparison.
+  It returns platform commissions to consumers as cashback and analyzes historical
+  price trends across major Chinese marketplaces including Taobao, JD.com, Pinduoduo,
+  Douyin, and VipShop to help shoppers save money. Founded in 2018, the company reports
+  50M+ users and is backed by DCM Ventures, Xiaomi, and Toutoushidao Fund. It was added
+  to the API Evangelist network as a portfolio-lead stub; the company is consumer-facing
+  and publishes no public developer program, API, or documentation surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/fenxiang-life/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- E-Commerce
+- Social Commerce
+- Cashback
+- Price Comparison
+- Shopping
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fenxiang-life-domain-security.yml
 - type: Website
   url: http://www.fenxianglife.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
